@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    discovery:
+      enabled: true
+      consul:
+        host: localhost  # Replace with your Consul agent host
+        port: 8500        # Replace with your Consul agent port
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+
